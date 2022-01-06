@@ -1,0 +1,20 @@
+version: "3"
+services:
+  app:
+    container_name: dev_rust_practice_cargo_app
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - USER=root
+    tty: true
+    ports:
+      - 8080:8080
+    volumes:
+      - ./:/app
+    restart: always
+    networks:
+      - dev_rust_practice_cargo_network
+
+networks:
+  dev_rust_practice_cargo_network:
