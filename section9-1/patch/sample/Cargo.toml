@@ -1,0 +1,21 @@
+[package]
+name = "sample"
+version = "0.1.0"
+edition = "2021"
+
+# ver.1
+[dependencies]
+uuid = {version="0.8.2"}
+
+[patch.crates-io]
+uuid = {path = "../uuid"}
+
+# ver.2
+# [dependencies]
+# uuid = {version="1.0.0-alpha.1", path = "../uuid"}
+# mktemp = "0.4.0"
+
+
+# ver.fianl (내가 수정한 내용을 git 에 upload, upload 한 url 을 참조)
+# [patch.crates-io]
+# uuid = {git = "https://example.com/my-account/uuid.git"}

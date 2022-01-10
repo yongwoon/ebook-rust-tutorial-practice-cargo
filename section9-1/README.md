@@ -4,3 +4,4 @@
 
 - dir
 - feature
+- patch
