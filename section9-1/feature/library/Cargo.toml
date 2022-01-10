@@ -1,0 +1,25 @@
+[package]
+name = "library"
+version = "0.1.0"
+edition = "2021"
+
+
+[features]
+# default で有効になる feature
+default = ["parallel", "serde"]
+
+# 依存関係を持たない feature
+special = []
+
+# 依存 crate を持つ feature
+parallel = ["crossbeam"]
+
+# 依存 crate の feature を有効にする feature
+nightly = ["crossbeam/nightly"]
+
+# いろいろな依存関係を混ぜた例
+full = ["crossbeam/nightly", "parallel", "serde"]
+
+[dependencies]
+crossbeam = {version = "0.8.1", optional = true}
+serde = {version = "1.0.111", optional = true}
