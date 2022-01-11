@@ -2,7 +2,6 @@ pub fn hello() {
     println!("Hello here is sub.");
 }
 
-
 #[cfg(test)]
 mod tests {
     #[test]
@@ -11,4 +10,3 @@ mod tests {
         assert_eq!(result, 4);
     }
 }
-
