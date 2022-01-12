@@ -5,3 +5,4 @@
   - 2. criterion
   - 3. profiler
   - 4. flamegraph
+  - 5. hyperfine
