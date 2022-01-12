@@ -4,3 +4,4 @@
   - 1. bench
   - 2. criterion
   - 3. profiler
+  - 4. flamegraph
