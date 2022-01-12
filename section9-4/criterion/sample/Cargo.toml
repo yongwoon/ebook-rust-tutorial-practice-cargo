@@ -1,0 +1,16 @@
+[package]
+name = "sample"
+version = "0.1.0"
+edition = "2021"
+
+[dev-dependencies]
+criterion = "0.3.4"
+
+# harness = false
+# `cargo bench` で呼び出される標準の test harness を向こうにすることを示し
+# name で指定した名前です。
+[[bench]]
+name = "benchmark"
+harness = false
+
+[dependencies]

@@ -1,4 +1,6 @@
-# section 9.4 benchmark, profiler
+# section 9.4
+
+## benchmark
 
 - Create project
 
@@ -10,4 +12,4 @@ cargo new --lib sample
 
 ```bash
 cargo +nightly bench
-``` 
+```
